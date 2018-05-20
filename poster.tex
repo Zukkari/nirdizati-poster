@@ -1,0 +1,38 @@
+\documentclass[24pt, a0paper, landscape]{tikzposter}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[labelsep=period]{caption}
+
+\title{Nirdizati Training}
+\author{Stanislav Mõškovski\\{\small \textit{Supervised by Ilya Verenich, MSc}}}
+\date{today}
+\institute{Institute of Computer Science, University of Tartu}
+
+
+\begin{document}
+    \maketitle
+
+    \begin{columns}
+        \column{0.3}
+        \block{Description}{}
+
+        \column{0.4}
+        \block{User interface}
+        {
+        \begin{tikzfigure}[Training view of Nirdizati Training component.]
+            \includegraphics{figures/training.png}
+        \end{tikzfigure}
+
+        \begin{tikzfigure}[View of completed simulations, which allows sorting and grouping by various parameters.]
+            \includegraphics{figures/validation.png}
+        \end{tikzfigure}
+
+        \begin{tikzfigure}[Model evaluation view with model accuracy visualization.]
+            \includegraphics[scale=0.65]{figures/model_overview.png}
+        \end{tikzfigure}
+        }
+
+        \column{0.3}
+        \block{Technical solution}{}
+    \end{columns}
+\end{document}

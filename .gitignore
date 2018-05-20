@@ -240,3 +240,8 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+
+# Binaries and IDE files
+*.pdf
+*.iml
+.idea
