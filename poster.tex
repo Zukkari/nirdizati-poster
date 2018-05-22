@@ -25,29 +25,40 @@ urlcolor=cyan,
         \column{0.3}
         \block{Description}
         {
-        Write in general what is Nirdizati Training component.
-        What is the purpose of this?
-        Who is it targeted at?
+        \textbf{Predictive monitoring} is an emerging type of online process monitoring that uses historical data to
+        construct a predictive model using various machine learning methods and then applies
+        this model to a live event stream in order to predict the future performance of ongoing
+        process cases. \\
+        \textbf{Nirdizati Training} allows its users to easily \textbf{upload} their event log, \textbf{train}
+        a predictive model by using various machine learning algorithms, \textbf{visualize} the results
+        and then \textbf{export} the model for further predictions on a live event stream.
         }
 
-        \block{Problems of existing solutions}
+        \block{TODO}
         {
-        Briefly mention problems of existing solutions.
-        What are their weaknesses?
-        What are their shortcomings?
+        Think of something for another paragraph.
         }
 
-        \block{Advantages of our solution}
+        \block{Advantages}
         {
-        Describe advantages of our solution.
-        Those can be taken from thesis.
+        \begin{itemize}
+            \item Accessible via any modern web browser that supports JavaScript.
+            \item All computations are done of the server side
+            \item Automatic data attribute classification.
+            \item Parallel simulation running.
+            \item Model accuracy visualization and comparison.
+            \item Great variety of machine learning techniques and algorithms.
+            \item Highly configurable training process.
+        \end{itemize}
         }
 
         \block{Interoperability}
         {
-        Write about how output of the application can be used for further
-        analysis.
-        Mention that model can by deployed to Nirdizati Runtime component.
+        Nirdizati Training uses open data formats (\textit{.pkl} and \textit{.csv}) that allow easy result exporting.
+        Users can export a trained model and simulation results for further analysis
+        outside of the application.
+        Most importantly, the trained model can be easily deployed into the \href{http://dashboard.nirdizati.com/}{Nirdizati Runtime}
+        component without any external modifications.
         }
 
         \column{0.4}
