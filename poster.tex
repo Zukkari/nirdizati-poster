@@ -2,6 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[labelsep=period]{caption}
+\usepackage{multicol}
+
+\setlength{\columnsep}{3cm}
 
 \usepackage{url}
 \usepackage{hyperref}
@@ -12,7 +15,7 @@ filecolor=magenta,
 urlcolor=cyan,
 }
 
-\title{Nirdizati Training}
+\title{Nirdizati Training - Anticipate the future}
 \author{Stanislav Mõškovski\\{\small \textit{Supervised by Ilya Verenich, MSc}}}
 \date{today}
 \institute{Institute of Computer Science, University of Tartu}
@@ -23,48 +26,66 @@ urlcolor=cyan,
 
     \begin{columns}
         \column{0.3}
+        \block{}
+        {
+        \begin{tikzfigure}[Predictive process monitoring scheme]
+            \includegraphics[scale=0.9]{figures/ppm.png}
+        \end{tikzfigure}
+        }
+
+        \block{}
+        {
+
+        \begin{multicols}{2}
+            {\huge\textbf{Problems}}
+            \bigskip
+
+            \begin{itemize}
+                \item Processes take longer than necessary
+                \item Deadline violations
+                \item Process errors occur
+                \item Inefficient resource management
+            \end{itemize}
+            \columnbreak
+
+            {\huge\textbf{Solution}}
+            \bigskip
+            \begin{itemize}
+                \item Predictive process monitoring
+                \item Act before deviations happen
+                \item Draw attention to potential problems
+                \item Prioritize process instances
+            \end{itemize}
+
+        \end{multicols}
+
+        }
+
+
         \block{Description}
         {
-        \textbf{Predictive monitoring} is an emerging type of online process monitoring that uses historical data to
-        construct a predictive model using various machine learning methods and then applies
-        this model to a live event stream in order to predict the future performance of ongoing
-        process cases. \\
         \textbf{Nirdizati Training} allows its users to easily \textbf{upload} their event log, \textbf{train}
         a predictive model by using various machine learning algorithms, \textbf{visualize} the results
         and then \textbf{export} the model for further predictions on a live event stream.
         }
 
-        \block{TODO}
-        {
-        Think of something for another paragraph.
-        }
-
         \block{Advantages}
         {
         \begin{itemize}
-            \item Accessible via any modern web browser that supports JavaScript.
+            \item Accessible via any modern web browser that supports JavaScript
             \item All computations are done of the server side
-            \item Automatic data attribute classification.
-            \item Parallel simulation running.
-            \item Model accuracy visualization and comparison.
-            \item Great variety of machine learning techniques and algorithms.
-            \item Highly configurable training process.
+            \item Automatic data attribute classification
+            \item Parallel simulation running
+            \item Model accuracy visualization and comparison
+            \item Great variety of machine learning techniques and algorithms
+            \item Highly configurable training process
         \end{itemize}
-        }
-
-        \block{Interoperability}
-        {
-        Nirdizati Training uses open data formats (\textit{.pkl} and \textit{.csv}) that allow easy result exporting.
-        Users can export a trained model and simulation results for further analysis
-        outside of the application.
-        Most importantly, the trained model can be easily deployed into the \href{http://dashboard.nirdizati.com/}{Nirdizati Runtime}
-        component without any external modifications.
         }
 
         \column{0.4}
         \block{User interface}
         {
-        \begin{tikzfigure}[Training view of Nirdizati Training component.]
+        \begin{tikzfigure}[Training view of Nirdizati Training component]
             \includegraphics{figures/training.png}
         \end{tikzfigure}
 
@@ -72,7 +93,7 @@ urlcolor=cyan,
             \includegraphics{figures/validation.png}
         \end{tikzfigure}
 
-        \begin{tikzfigure}[Model evaluation view with model accuracy visualization.]
+        \begin{tikzfigure}[Model evaluation view with model accuracy visualization]
             \includegraphics[scale=0.65]{figures/model_overview.png}
         \end{tikzfigure}
         }
@@ -80,8 +101,13 @@ urlcolor=cyan,
         \column{0.3}
         \block{Technical solution}
         {
-        Data flow diagram?
-        Architecture diagram?
+        \begin{tikzfigure}[Data flow of Nirdizati Training]
+            \includegraphics[scale=0.7]{figures/data_flow.png}
+        \end{tikzfigure}
+
+        \begin{tikzfigure}[Architecture of Nirdizati Training]
+            \includegraphics{figures/stack.png}
+        \end{tikzfigure}
         }
 
         \block{Links}
@@ -97,5 +123,13 @@ urlcolor=cyan,
 
         \textbf{Twitter:} \href{https://twitter.com/nirdizati}{\url{https://twitter.com/nirdizati}}
         }
+
+        \block{}
+        {
+        \begin{tikzfigure}
+            \includegraphics[scale=0.9]{figures/unilogo.jpg}
+        \end{tikzfigure}
+        }
+
     \end{columns}
 \end{document}
