@@ -1,6 +1,7 @@
 \documentclass[24pt, a0paper, landscape]{tikzposter}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage[labelsep=period]{caption}
 \usepackage{multicol}
 
@@ -75,8 +76,6 @@ urlcolor=cyan,
             \item Accessible via any modern web browser that supports JavaScript
             \item Simple and sleek UI
             \item All computations are done of the server side
-%            \item Automatic data attribute classification
-% 				they won't understand wtf that is
             \item Parallel training jobs
             \item Model accuracy visualization and comparison
             \item Great variety of machine learning techniques and algorithms
@@ -130,9 +129,19 @@ urlcolor=cyan,
 
         \block{}
         {
-        \begin{tikzfigure}
-            \includegraphics[scale=0.9]{figures/unilogo.jpg}
-        \end{tikzfigure}
+
+        \begin{multicols}{2}
+            \begin{tikzfigure}
+                \includegraphics[scale=0.9]{figures/unilogo.jpg}
+            \end{tikzfigure}
+
+            \columnbreak
+
+            \begin{tikzfigure}
+                \includegraphics[scale=0.5]{figures/qr.png}
+            \end{tikzfigure}
+        \end{multicols}
+
         }
 
     \end{columns}
