@@ -15,7 +15,7 @@ filecolor=magenta,
 urlcolor=cyan,
 }
 
-\title{Nirdizati Training - Anticipate the future}
+\title{Nirdizati -- Anticipate the future {\LARGE \textit{(by training better models!)}} }
 \author{Stanislav Mõškovski\\{\small \textit{Supervised by Ilya Verenich, MSc}}}
 \date{today}
 \institute{Institute of Computer Science, University of Tartu}
@@ -28,7 +28,7 @@ urlcolor=cyan,
         \column{0.3}
         \block{}
         {
-        \begin{tikzfigure}[Predictive process monitoring scheme]
+        \begin{tikzfigure}
             \includegraphics[scale=0.9]{figures/ppm.png}
         \end{tikzfigure}
         }
@@ -64,8 +64,8 @@ urlcolor=cyan,
 
         \block{Description}
         {
-        \textbf{Nirdizati Training} allows its users to easily \textbf{upload} their event log, \textbf{train}
-        a predictive model by using various machine learning algorithms, \textbf{visualize} the results
+        \textbf{Nirdizati Training} allows business process analysts to easily \textbf{upload} their event log, \textbf{train}
+        predictive models for various prediction targets by using state-of-the-art machine learning algorithms, \textbf{visualize and compare} the results
         and then \textbf{export} the model for further predictions on a live event stream.
         }
 
@@ -73,12 +73,14 @@ urlcolor=cyan,
         {
         \begin{itemize}
             \item Accessible via any modern web browser that supports JavaScript
+            \item Simple and sleek UI
             \item All computations are done of the server side
-            \item Automatic data attribute classification
-            \item Parallel simulation running
+%            \item Automatic data attribute classification
+% 				they won't understand wtf that is
+            \item Parallel training jobs
             \item Model accuracy visualization and comparison
             \item Great variety of machine learning techniques and algorithms
-            \item Highly configurable training process
+            \item Highly configurable training process for expert users
         \end{itemize}
         }
 
@@ -112,13 +114,15 @@ urlcolor=cyan,
 
         \block{Links}
         {
+        	
+       	\textbf{Live demo:} \href{http://training.nirdizati.org/}{\url{http://training.nirdizati.org/}}
+
+        \bigbreak
         \textbf{Code:} \href{https://github.com/Zukkari/nirdizati-training-ui}{\url{https://github.com/Zukkari/nirdizati-training-ui}}
+        
         \bigbreak
-
-        \textbf{Nirdizati:} \href{http://nirdizati.org/}{\url{http://nirdizati.org}}
-        \bigbreak
-
-        \textbf{Nirdizati Training:} \href{http://training.nirdizati.org/}{\url{http://training.nirdizati.org/}}
+        \textbf{Landing:} \href{http://nirdizati.org/}{\url{http://nirdizati.org}}
+        
         \bigbreak
 
         \textbf{Twitter:} \href{https://twitter.com/nirdizati}{\url{https://twitter.com/nirdizati}}
